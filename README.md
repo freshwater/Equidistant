@@ -46,7 +46,7 @@ model = gc.GeometricConstraints(points=5, dimensions=2, iterations=10000, constr
     <img src="images/5p2d_002_symmetry.svg">
 </p>
 
-The second constraint wants two points to have the same y value, which gives the figure a left-right symmetry. Sometimes the figures fall into different local minima:
+The second constraint wants two points to have the same y value, which gives the figure a left-right symmetry. Sometimes the figures fall into different minima:
 
 <p align="center">
     <img src="images/5p2d_002_symmetry_2.svg">
@@ -69,7 +69,7 @@ plt.scatter(*points[2:].T);
     <img src="images/11p2d_001.svg">
 </p>
 
-This could always be done by hard coding the points, but specifying them as constraints works well, and the weight on the constraint can always be increased to make it resemble a hard coded value.
+This could be done by hard coding the points, but specifying them as constraints works well, and the weight on the constraint can always be increased to make it resemble a hard coded value.
 
 It's fun to pin different locations to see what the system does:
 
